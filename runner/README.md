@@ -3,7 +3,7 @@
 ## install-runner.sh Usage
 
 ```bash
-./install-runner.sh <target-ip>
+./install-runner.sh <runner-ip>
 ```
 
 ## register-ssh.sh Usage

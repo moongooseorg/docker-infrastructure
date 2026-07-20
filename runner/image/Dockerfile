@@ -24,7 +24,7 @@ ENV RUNNER_ALLOW_RUNASROOT=1
 # apt cache is deleted in the same layer, else it ships in the image.
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
-      ca-certificates curl git sudo \
+      ca-certificates curl git openssh-client sudo \
  && install -m 0755 -d /etc/apt/keyrings \
  && curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc \
  && echo "deb [arch=arm64 signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu jammy stable" > /etc/apt/sources.list.d/docker.list \
